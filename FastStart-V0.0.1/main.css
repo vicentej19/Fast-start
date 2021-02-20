@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    background-color: #f0f0f0;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(216, 133, 37);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+#nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#nav-bar li {
+    padding: 0em 1em;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: rgb(177, 177, 177);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.fast-start {
+    font-family: 'Lobster', sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+}
+
+#container {
+    padding-top: 1em;
+}
+
+.welcome {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(255, 136, 0);
+    height: 100vh;
+}
+
+.main-card {
+    background-color:rgba(255, 255, 255, 0.712);
+    border-radius: 20px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.main-card h2 {
+    font-size: 2em;
+}
+.apps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+.img-card {
+    width: 6em;
+}
+
+.cardapp {
+    text-align: center;
+    background-color: rgb(236, 234, 234);
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.cardapp:hover {
+    opacity: 0.5;
+}
+
+.cardapp a {
+    text-decoration: none;
+    color: #000;
+}
+
+.google-logo-form {
+    width: 0.4em;
+}
+
+.google-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40%;
+    margin-left: 27%;
+    border-radius: 2em;
+    padding-left: 1em;
+}
+
+.google-form input {
+    border: none;
+    padding: 0.5em;
+    font-size: 0.5em;
+}
+
+#submit {
+    background-color: rgb(4, 236, 4);
+    border-radius: 2em;
+    font-size: 0.5em;
+}
+
+#submit:active{
+    border: none;
+}
+
+@media screen and (max-width: 700px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-size: 0.7em;
+    }
+
+    #navigation {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        height: auto;
+        position: relative;
+    }
+
+    .fast-start {
+        margin-top: 2em;
+        padding-left: 6.5em;
+    }
+
+    #nav-bar {
+        visibility: hidden;
+    }
+
+    .google-form {
+        visibility: hidden;
+    }
+
+    .welcome {
+        margin-top: 5em;
+        height: 10em;
+        align-items: center;
+        text-align: center;
+        display: grid;
+    }
+
+    .apps{
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+
+    .welcome h1 {
+        font-size: 1em;
+    }
+}
